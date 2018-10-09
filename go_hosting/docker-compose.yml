@@ -1,0 +1,6 @@
+version: "3"
+services:
+  echo:
+    build: . # Dockerfileの場所を指定。imageで指定も可能。
+    ports:
+      - 9000:8080 

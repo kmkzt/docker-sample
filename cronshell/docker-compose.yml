@@ -1,0 +1,8 @@
+# docker image build -t example/clonjob:latest .
+# docker container run -d --rm --name cronjob example/cronjob:latest
+
+version: "3"
+services:
+  cronjob:
+    build: .
+    image: example/cronjob:latest
